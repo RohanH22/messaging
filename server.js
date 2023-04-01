@@ -11,7 +11,7 @@ app.use(cors());
 
 
 var mongoose = require('mongoose')
-
+ 
 app.use(express.static(__dirname))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
