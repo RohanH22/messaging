@@ -1,5 +1,4 @@
-
-var socket = io()
+var socket = io();
 $(() => {
     $("#send").click(() => {
         // addMessages({ name: 'Tim', message: 'hello' })
@@ -17,12 +16,12 @@ function addMessages(message) {
 }
 
 function getMessages() {
-    $.get('https://rohanh22.github.io/nodeJS2/messages', (data) => {
+    $.get('http://localhost:3000/messages', (data) => {
         data.forEach(addMessages);
     })
 }
 function postMessages(message) {
-    $.post('https://rohanh22.github.io/nodeJS2/messages',message)
+    $.post('http://localhost:3000/messages',message)
     // $.post('http://localhost:3000/messages',message, (data) => {
     //     data.forEach(addMessages);
     // })
