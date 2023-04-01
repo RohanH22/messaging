@@ -16,12 +16,12 @@ function addMessages(message) {
 }
 
 function getMessages() {
-    $.get('http://localhost:3000/messages', (data) => {
+    $.get('https://u-message-fun.vercel.app/messages', (data) => {
         data.forEach(addMessages);
     })
 }
 function postMessages(message) {
-    $.post('http://localhost:3000/messages',message)
+    $.post('https://u-message-fun.vercel.app/messages',message)
     // $.post('http://localhost:3000/messages',message, (data) => {
     //     data.forEach(addMessages);
     // })
