@@ -4,6 +4,8 @@ var app = express()
 var http = require('http')
 var server = http.createServer(app);
 var io = require('socket.io')(server)
+// const http = require('http').createServer(app);
+// const io = require('socket.io')(http);
 
 var mongoose = require('mongoose')
 
